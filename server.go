@@ -1,4 +1,4 @@
-package ligthserver
+package lightserver
 
 import (
 	"bytes"
@@ -38,7 +38,6 @@ func OnGet(route string, handler func(QueryString) string) {
 		defer r.Body.Close()
 
 		exec.Try(func() {
-
 			w.Header().Set("Access-Control-Allow-Origin", "*")
 			w.Header().Set("Access-Control-Allow-Headers", "Content-Type, x-requested-with")
 

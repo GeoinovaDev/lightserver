@@ -1,4 +1,4 @@
-package ligthserver
+package lightserver
 
 import (
 	"net/url"
